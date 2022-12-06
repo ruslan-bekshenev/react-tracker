@@ -3,6 +3,8 @@ import { Route, Routes, BrowserRouter as Router } from "react-router-dom"
 import Timer from "./pages/Timer"
 
 const App = () => {
+  console.log("123")
+
   return (
     <div>
       <Router>
