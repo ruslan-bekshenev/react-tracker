@@ -1,12 +1,12 @@
 import React from "react"
-import Clock from "../../components/Clock"
+import Timer from "../../components/Timer"
 import Tasks from "../../components/Tasks"
 
-const Timer = () => {
+const TimerPage = () => {
   return (
     <div>
       <div className="clock">
-        <Clock />
+        <Timer />
       </div>
       <div className="task-container">
         <Tasks />
@@ -15,4 +15,4 @@ const Timer = () => {
   )
 }
 
-export default Timer
+export default TimerPage

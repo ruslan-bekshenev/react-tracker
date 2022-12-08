@@ -1,6 +1,6 @@
 import React from "react"
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom"
-import Timer from "./pages/Timer"
+import TimerPage from "./pages/Timer"
 
 const App = () => {
   console.log("123222")
@@ -9,7 +9,7 @@ const App = () => {
     <div>
       <Router>
         <Routes>
-          <Route path="/" element={<Timer />}></Route>
+          <Route path="/" element={<TimerPage />}></Route>
         </Routes>
       </Router>
     </div>
