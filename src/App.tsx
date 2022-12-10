@@ -1,18 +1,33 @@
 import React from "react"
-import { Route, Routes, BrowserRouter as Router } from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import CssBaseline from "@mui/material/CssBaseline"
+import { createTheme, ThemeProvider } from "@mui/material/styles"
+
 import TimerPage from "./pages/Timer"
 
-const App = () => {
-  console.log("123222")
+import "@fontsource/roboto/300.css"
+import "@fontsource/roboto/400.css"
+import "@fontsource/roboto/500.css"
+import "@fontsource/roboto/700.css"
 
+const darkTheme = createTheme({
+  palette: {
+    mode: "dark",
+  },
+})
+
+const App = () => {
   return (
-    <div>
-      <Router>
-        <Routes>
-          <Route path="/" element={<TimerPage />}></Route>
-        </Routes>
-      </Router>
-    </div>
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
+      <div>
+        <Router>
+          <Routes>
+            <Route path="/" element={<TimerPage />}></Route>
+          </Routes>
+        </Router>
+      </div>
+    </ThemeProvider>
   )
 }
 

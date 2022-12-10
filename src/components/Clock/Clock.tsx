@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react"
 
 const Clock = () => {
-  return (
-    <div>
-      asd
-    </div>
-  );
-};
+  return <div>asd</div>
+}
 
-export default Clock;
+export default Clock
